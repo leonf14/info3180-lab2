@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+
+{% block css %}
+
+<style type="text/css">
+    .infobox{
+        width: 320px;
+        padding: 10px;
+        border-style: inset;
+        margin: 1px;
+    }
+    
+    #profile_pic, #data_div{
+        float: left;
+        width: 200px;
+        margin: 20px;
+    }
+    
+</style>
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+{% block main %}
+<div id="profile_pic">
+    <img src="/static/img/leon.jpg" alt="Profile Picture" width="200" height="200">
+</div>
+<div id="data_div">
+    <div id="name" class="infobox">
+        Leon Facey
+    </div>
+    <div id="time" class="infobox">
+        Today is: {{now}}
+    </div>
+    <div id="profile_info" class="infobox">
+        <p>Username: Leon <br>ID: 620012345 <br>Sex: Male <br> Age: 100 </p>
+    </div>
+    
+     <div id="name" class="infobox">
+        I am a Legend
+    </div>
+</div>
+{% endblock %}
